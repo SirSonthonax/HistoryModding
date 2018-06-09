@@ -1,6 +1,129 @@
 h1 {
 	font-family: "Arial"
-}
+	}
 body {
 	background-color: #ffffaf;
+}
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+	text-align: left;
+}
+th, td {
+	padding: 15px;
+} 
+
+.leader{
+	background-color: #4CAF50;
+    color: white;
+}
+.graphics {
+	background-color: #0033cc;
+	color: white;
+}
+
+.diplomacy {
+	background-color: #f4f142;
+	color: black;
+}
+
+.misc {
+	background-color: #f442df;
+	color: white;
+}
+
+.religion {
+	background-color: #ff2828;
+	color: black;
+}
+
+.collapsible-leader label {
+    font-family: 'Times New Roman', cursive;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 0 10px 50px;
+	background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+}
+
+.collapsible-graphics label {
+    font-family: 'Times New Roman', cursive;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 0 10px 50px;
+	background-color: white;
+    color: black;
+    border: 2px solid #0033cc; /* Blue */
+}
+
+.collapsible-diplomacy label {
+    font-family: 'Times New Roman', cursive;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 0 10px 50px;
+	background-color: white;
+    color: black;
+    border: 2px solid #f4f142; /* Yellow */
+}
+
+.collapsible-misc label {
+    font-family: 'Times New Roman', cursive;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 0 10px 50px;
+	background-color: white;
+    color: black;
+    border: 2px solid #f442df; /* Purple */
+}
+
+.collapsible-religion label {
+    font-family: 'Times New Roman', cursive;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 0 10px 50px;
+	background-color: white;
+    color: black;
+    border: 2px solid #ff2828; /* red */
+}
+
+input#leadciv {
+    display: none;
+}
+
+input#graphics {
+	display: none;
+}
+
+input#diplomacy {
+	display: none;
+}
+
+input#misc {
+	display: none;
+}
+
+input#religion {
+	display: none;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(close.png);
+}
+input:checked ~ .menu-content {
+    max-height: 100%;
 }
